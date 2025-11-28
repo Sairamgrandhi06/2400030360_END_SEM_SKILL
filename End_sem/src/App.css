@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin: 60px auto;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.image-preview-area {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #eee;
+}
+
+#profileImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#promptText {
+    position: absolute;
+    color: #555;
+    font-size: 0.9em;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.image-preview-area:hover #promptText {
+    opacity: 0.8;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
